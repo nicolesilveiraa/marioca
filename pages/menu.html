@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Menu Principal</title>
+  <link rel="stylesheet" href="../styles/menu.css" />
+  <link rel="icon" href="../images/logo.jpeg">
+</head>
+
+<body>
+  <div class="navbar">
+    <div class="nav-logo">
+      <img src="../images/logo.jpeg" alt="" class="logo" width="160px" />
+    </div>
+    <div class="nav-items">
+      <nav class="items">
+        <ul class="item-list">
+          <li class="item">
+            <a href="./comidas.html">Comidas</a>
+          </li>
+          <li class="item">
+            <a href="./bebidas.html">Bebidas</a>
+          </li>
+          <li class="item">
+            <a href="./pedidos.html">Pedidos<span id="pedido-count" class="pedido-count">0</span></a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+
+  <div class="main">
+    <main class="content">
+      <div class="content-presentation">
+        <h1 id="drink-title">DRINK DA CASA</h1>
+        <h2 id="drink-name-price">Corona Sunset <span class="product-price">R$25</span></h2>
+        <p id="drink-description">
+          A vida é bonita e eu posso provar combinamos corona, tequila, limão,
+          laranja, xarope de groselha, pedaço de morango e limão com sal na
+          borda, SÓ VAI.
+        </p>
+
+        <button id="btn-pedir-drink" class="btn-pedir">Pedir</button>
+      </div>
+      <div class="content-carousel">
+        <div class="arrow left-arrow" onclick="moveCarousel(-1)">
+          <img src="../images/arrow.png" alt="" style="transform: rotate(180deg)" />
+        </div>
+        <div class="carousel-img">
+          <video class="carousel-item" autoplay loop muted>
+            <source src="../images/video1.mp4" type="video/mp4" />
+          </video>
+          <video class="carousel-item" autoplay loop muted>
+            <source src="../images/video3.mp4" type="video/mp4" />
+          </video>
+          <video class="carousel-item" autoplay loop muted>
+            <source src="../images/video2.mp4" type="video/mp4" />
+          </video>
+        </div>
+        <div class="arrow right-arrow" onclick="moveCarousel(1)">
+          <img src="../images/arrow.png" alt="" />
+        </div>
+      </div>
+    </main>
+    <script src="../scripts/carousel.js"></script>
+    <script src="../scripts/item-counter.js"></script>
+    <script src="../scripts/menu.js"></script>
+  </div>
+</body>
+
+</html>

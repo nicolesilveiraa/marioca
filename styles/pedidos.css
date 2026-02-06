@@ -1,0 +1,215 @@
+@import url("https://fonts.googleapis.com/css2?family=Chewy&display=swap");
+
+* {
+  font-family: "Chewy", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  border: 0;
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+a,
+a:visited {
+  color: black;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: #e5ed0231;
+  align-items: center;
+}
+
+.navbar>.nav-items>.items>.item-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  height: 100%;
+}
+
+.navbar>.nav-items>.items>.item-list>.item {
+  position: relative;
+  padding: 10px 30px;
+  font-size: 36px;
+  text-align: center;
+  font-weight: 700;
+  height: 100%;
+  color: black;
+}
+
+.pedido-count {
+  position: absolute;
+  top: 50%;
+  right: 82%;
+  transform: translateY(-50%);
+  background-color: #da1852;
+  color: white;
+  font-size: 14px;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+
+}
+
+.pedido-count.animate {
+  animation: shake 0.5s ease;
+}
+
+@keyframes shake {
+  0% {
+    transform: scale(1);
+  }
+
+  25% {
+    transform: scale(1.1);
+  }
+
+  50% {
+    transform: scale(1);
+  }
+
+  75% {
+    transform: scale(1.1);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.pedido-item h3 {
+  margin-right: 10px;
+}
+
+body {
+  background-image: url("../images/background.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow-x: hidden;
+}
+
+main.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  padding: 40px;
+  width: 100vw;
+}
+
+.pedido button {
+  background-color: #da1852;
+  color: #fff;
+  font-size: 30px;
+  cursor: pointer;
+  border-radius: 8px;
+  padding: 10px;
+}
+
+
+.content .logo {
+  width: 320px;
+}
+
+.controller button {
+  background-color: #da1852;
+  color: #fff;
+  cursor: pointer;
+  font-size: 50px;
+}
+
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #da1852;
+  width: 80vw;
+  height: 100%;
+  color: #e5ed02;
+  font-size: 50px;
+  box-shadow: 0px 3px 7px 2px rgb(0 0 0 / 25%);
+}
+
+.pedidos-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  max-height: 300px;
+  overflow-y: auto;
+  width: 100%;
+  gap: 10px;
+
+}
+
+.pedidos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+  justify-content: space-evenly;
+  justify-items: center;
+  align-items: center;
+}
+
+.pedido {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #da1852;
+  border-radius: 8px;
+  padding: 12px;
+  width: 100%;
+  box-shadow: 0px 3px 7px 2px rgb(0 0 0 / 25%);
+  gap: 15px;
+
+}
+
+
+.controller {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.container>div.content {
+  display: flex;
+  width: 100%;
+}
+
+.content2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+  justify-content: center;
+  justify-items: center;
+}
+
+.btn-whatsapp {
+  color: #fff !important;
+  padding: 6px 16px;
+  border-radius: 24px;
+  display: flex;
+  width: 320px;
+  align-items: center;
+  background-color: rgb(79, 228, 79);
+}
+
+.btn-whatsapp svg {
+  margin-right: 15px;
+}

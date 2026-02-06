@@ -1,0 +1,226 @@
+@import url("https://fonts.googleapis.com/css2?family=Chewy&display=swap");
+
+* {
+  font-family: "Chewy", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  border: 0;
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+a,
+a:visited {
+  color: black;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: #e5ed02;
+  align-items: center;
+}
+
+.navbar>.nav-items>.items>.item-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  height: 100%;
+}
+
+.navbar>.nav-items>.items>.item-list>.item {
+  position: relative;
+  padding: 10px 30px;
+  font-size: 36px;
+  text-align: center;
+  font-weight: 700;
+  height: 100%;
+  color: black;
+}
+
+.pedido-count {
+  position: absolute;
+  top: 50%;
+  right: 82%;
+  transform: translateY(-50%);
+  background-color: #da1852;
+  color: white;
+  font-size: 14px;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+body {
+  background-color: #e5ed02;
+  overflow-x: hidden;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: #e5ed02;
+}
+
+main.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  padding-top: 2rem;
+}
+
+main.content>h1 {
+  color: #da1852;
+  font-size: 3rem;
+}
+
+main>.content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  max-width: 80vw;
+  padding-bottom: 3rem;
+}
+
+main>.content>.content-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #da1852;
+  padding: 20px;
+  color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 3px 7px 2px rgb(0 0 0 / 25%);
+  height: 100%;
+}
+
+.controller {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.5rem;
+  margin-top: 20px;
+}
+
+.controller>.btn-add {
+  background-color: #da1852;
+  color: #fff;
+  cursor: pointer;
+  padding: 10px 15px;
+  font-size: 1.5rem;
+  border: none;
+  width: 100%;
+  text-align: center;
+}
+
+main>.content>.content-box>.box-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+main>.content>.content-box>.box-info>.product-info {
+  display: flex;
+  flex-direction: column;
+  margin-left: 1.2rem;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+main>.content>.content-box>.box-info>.product-info>h2 {
+  color: #e5ed02;
+}
+
+main>.content>.content-box>.box-info>.product-info>p {
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+main>.content>.content-box>.box-info>.product-img {
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+}
+
+@media (max-width: 1024px) {
+  main>.content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  main>.content>.content-box {
+    padding: 15px;
+  }
+
+  .controller>.btn-add {
+    font-size: 1.3rem;
+    padding: 8px;
+  }
+
+  main>.content>.content-box>.box-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  main>.content>.content-box>.box-info>.product-img {
+    width: 120px;
+    height: 120px;
+  }
+
+  main>.content>.content-box>.box-info>.product-info {
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    text-align: center;
+    margin-left: 0;
+    align-items: center;
+
+  }
+}
+
+@media (max-width: 480px) {
+  main>.content {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+
+  .controller>.btn-add {
+    font-size: 1.2rem;
+    padding: 6px;
+  }
+
+  main>.content>.content-box>.box-info {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  main>.content>.content-box>.box-info>.product-img {
+    width: 100px;
+    height: 100px;
+  }
+
+  main>.content>.content-box>.box-info>.product-info {
+    text-align: center;
+  }
+}
